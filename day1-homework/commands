@@ -1,0 +1,43 @@
+##Setup
+
+cd 
+cd qbb2016-answers/
+mkdir day1-homework
+nano commands
+nano answers
+cd
+cd data/
+mkdir day1-homework
+
+
+#####Q1
+cd
+cd data/fastq/
+gunzip SRR072893.fastq.gz 
+fastqc --help
+
+fastqc -o ../day1-homework/ SRR072893.fastq
+
+
+#####Q2
+cd
+cd data/fastq/
+
+hisat2 -p 4 -x ../BDGP6/BDGP6 -U SRR072893.fastq -S ../day1-homework/Map.sam
+
+
+#####Q3
+cd
+cd data/day1-homeowrk
+
+samtools sort Map.sam -o sorted.bam
+samtools index sorted.bam 
+
+
+######Q4
+cd
+cd data/day1-homeowrk
+
+stringtie sorted.bam -p 4 -e -G ../BDGP6/BDGP6.Ensembl.85.gtf -B -o ./GGGGG
+
+mv GGGGG GGGG.gtf
