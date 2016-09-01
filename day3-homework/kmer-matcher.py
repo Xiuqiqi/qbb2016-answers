@@ -6,6 +6,7 @@ match Kmer in Query and Target.
 Print target seq_name, target start position, query start position and Kmer seq. separated by <TAB>
 if there is more than one position in query, the positions are separated by a single space.
 
+
 usage: kmer_matcher.py <target.fa> <query.fa> <k>
 
 """
