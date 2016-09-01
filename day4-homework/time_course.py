@@ -29,7 +29,7 @@ plt.figure()
 for i in range(0,2):
     df_roi=df_meta["sex"]==sex[i]    # getting the roi in each sex
     df_meta_sex=df_meta[df_roi]
-    stages=df_meta_sex["stage"].values
+    stages=df_meta_sex["stage"].values  # converting dataframe to list
     for sample in df_meta_sex["sample"]:    # getting line in .ctab
         filename=ctab_dir+"/"+sample+"/t_data.ctab" # getting file name
         df = pd.read_table(filename)                
@@ -37,11 +37,11 @@ for i in range(0,2):
         #df[df_roi]["FPKM"]          # This is a Series
         sex_Sxl.append(df[df_roi]["FPKM"].values)          # Getting the FPKM in transcript
     plt.plot(sex_Sxl, color=color[i],label=sex[i],linewidth=3)
-    sex_Sxl=[]
+    sex_Sxl=[]      # Clean the FPKM list
 
 
 # Add the replicates
-rep_sex_Sxl=[0,0,0,0]
+rep_sex_Sxl=[0,0,0,0]       # skip 10,11,12,13
 for i in range(0,2):
     rep_roi=rep_meta["sex"]==sex[i]    # getting the roi in each sex
     rep_meta_sex=rep_meta[rep_roi]
