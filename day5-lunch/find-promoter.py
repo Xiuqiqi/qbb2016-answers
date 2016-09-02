@@ -33,7 +33,13 @@ df_promoter_minus["end"]=df_promoter_minus["start"]+1000
 
 pieces=[df_promoter_plus,df_promoter_minus]
 
-df_promoter=pd.concat(pieces).sort_index().to_csv( sys.stdout, sep="\t",index=False,header=False)
+df_promoter=pd.concat(pieces).sort_index()
+
+df_roi=df_promoter["chr"].str.len() < 4
+df_promoter=df_promoter[df_roi]
+
+
+df_promoter.to_csv( sys.stdout, sep="\t",index=False,header=False)
 
 
 #print df_promoter
