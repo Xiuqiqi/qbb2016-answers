@@ -11,7 +11,9 @@ for line in sys.stdin:
     fields=line.rstrip("\r\n").split("\t")
     if fields[2]=="*":
         continue
+    if fields[4]=="255":
+        continue
     s=s+int(fields[4])
     n=n+1
     
-print s/n
+print float(s/n)
