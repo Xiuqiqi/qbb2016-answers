@@ -46,3 +46,5 @@ ax.set_xlabel("Histone Modification")
 ax.set_title("Linear Regression H3K{}me3".format(sys.argv[2][0:2]))
 ax.set_ylim([0,200])
 plt.savefig("Histone-mRNA_Expression-H3K{}me3.png".format(sys.argv[2][0:2]))
+
+print results.summary()
