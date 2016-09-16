@@ -56,3 +56,6 @@ calcu_mutation.py
 	takes multi.fa & blast_final.fa and compare the two files.
 	add --- to nt seq according to one - in aa seq.
 	build triplet dictionary and calculate mutation & plot.
+
+Bar_selection.png
+	the plot showing positive selection.
