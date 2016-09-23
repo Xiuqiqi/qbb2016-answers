@@ -1,0 +1,76 @@
+/usr/local/Cellar/quast/4.2/quast.py ./low/vel/contigs.fa low/spa/contigs.fasta ./high/vel/contigs.fa high/spa/contigs.fasta
+
+Version: 4.2, build 21.07.2016 14:03
+
+System information:
+  OS: Darwin-15.6.0-x86_64-i386-64bit (macosx)
+  Python version: 2.7.12
+  CPUs number: 4
+
+Started: 2016-09-22 21:09:45
+
+Logging to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/quast.log
+NOTICE: Maximum number of threads is set to 1 (use --threads option to set it manually)
+
+Main parameters: 
+  Threads: 1, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  1  ./low/vel/contigs.fa ==> vel_contigs
+  2  low/spa/contigs.fasta ==> spa_contigs
+  3  ./high/vel/contigs.fa ==> vel_contigs 1
+  4  high/spa/contigs.fasta ==> spa_contigs 1
+
+2016-09-22 21:09:49
+Running Basic statistics processor...
+  Contig files: 
+    1  vel_contigs
+    2  spa_contigs
+    3  vel_contigs 1
+    4  spa_contigs 1
+  Calculating N50 and L50...
+    1  vel_contigs, N50 = 715, L50 = 7, Total length = 12968, GC % = 51.20, # N's per 100 kbp =  0.00
+    2  spa_contigs, N50 = 718, L50 = 8, Total length = 15922, GC % = 51.21, # N's per 100 kbp =  0.00
+    3  vel_contigs 1, N50 = 13390, L50 = 3, Total length = 99382, GC % = 52.57, # N's per 100 kbp =  0.00
+    4  spa_contigs 1, N50 = 100000, L50 = 1, Total length = 100000, GC % = 52.59, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/basic_stats/GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/basic_stats/coverage_histogram.pdf
+  Drawing vel_contigs coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/basic_stats/vel_contigs_coverage_histogram.pdf
+  Drawing spa_contigs coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/basic_stats/spa_contigs_coverage_histogram.pdf
+  Drawing vel_contigs 1 coverage histogram (bin size: 11x)...
+    saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/basic_stats/vel_contigs 1_coverage_histogram.pdf
+  Drawing spa_contigs 1 coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/basic_stats/spa_contigs 1_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding option to enable it.
+
+2016-09-22 21:09:53
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2016-09-22 21:09:55
+RESULTS:
+  Text versions of total report are saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/report.html
+  PDF version (tables and plots) is saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/report.pdf
+  Icarus (contig browser) is saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/icarus.html
+  Log saved to /Users/cmdb/qbb2016-answers/week2-homework/quast_results/results_2016_09_22_21_09_45/quast.log
+
+Finished: 2016-09-22 21:09:55
+Elapsed time: 0:00:09.496249
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

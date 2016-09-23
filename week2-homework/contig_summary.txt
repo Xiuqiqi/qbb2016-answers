@@ -1,0 +1,24 @@
+Number of contigs: 287
+Minimum of contig length: 21
+Maximum of contig length: 1313
+Average of contig length: 194
+N50 of contig set: 278
+
+Number of contigs: 128
+Minimum of contig length: 207
+Maximum of contig length: 1737
+Average of contig length: 389
+N50 of contig set: 372
+
+Number of contigs: 17
+Minimum of contig length: 21
+Maximum of contig length: 27782
+Average of contig length: 5864
+N50 of contig set: 13370
+
+Number of contigs: 1
+Minimum of contig length: 100000
+Maximum of contig length: 100000
+Average of contig length: 100000
+N50 of contig set: 100000
+
